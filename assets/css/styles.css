@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0, 0.70);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  h1{
+    font-size: 2rem;
+    color: yellowgreen;
+    text-align: center;
+  }
+
+  .buttonsContainer{
+    display: flex;
+    justify-content: center;
+  }
+}
