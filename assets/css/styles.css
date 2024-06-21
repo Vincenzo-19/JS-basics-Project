@@ -5,25 +5,59 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0, 0.70);
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
-
-main {
   height: 100vh;
   display: flex;
-  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 
-  h1{
-    font-size: 2rem;
-    color: yellowgreen;
+  .container {
     text-align: center;
+    background-color: white;
+    width: 50%;
+    border-radius: 15px;
   }
 
-  .buttonsContainer{
-    display: flex;
-    justify-content: center;
+  .buttonsContainer {
+    margin-bottom: 10px;
+
+    > .reset-button {
+      order: 3 !important;
+    }
+
+    > .increment-button {
+      order: 2 !important;
+    }
   }
+}
+
+h1 {
+  margin-top: 10px 0px 0px 0px !important;
+}
+
+@media screen and (max-width: 425px) {
+
+  .container {
+    width: 50% !important;
+
+    .buttonsContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      > .reset-button {
+        order: 3 !important;
+        margin: 10px;
+      }
+
+      > .increment-button {
+        order: 2 !important;
+      }
+      
+    }
+
+  }
+
 }
