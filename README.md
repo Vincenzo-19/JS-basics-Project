@@ -6,6 +6,9 @@
 <p>Below is the link for the counter⬇️</p>
 
 
+<p>Below is the link for the presentation⬇️</p>
+
+
 <h2>How it works</h2>
 <p>The counter I have created is simple. There is a value that starts at 0, then the -/+ buttons which respectively decrement by 1 and increment by 1, and the reset button which sets the value back to 0.</p>
 
