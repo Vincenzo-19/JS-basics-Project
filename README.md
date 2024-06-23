@@ -12,6 +12,5 @@ https://vincenzo-19.github.io/JS-basics-Project/
 https://1drv.ms/p/s!Aodt1AMLr1EhgjGA488Zc7nDtqG1?e=Yxcd3j
 
 
-<h2>How it works</h2>
+<h2>Come funziona</h2>
 <p>Il counter che ho creato è molto semplice. C’è un valore che inizia da 0, poi ci sono i pulsanti -/+ che rispettivamente decrementano di 1 e incrementano di 1, e il pulsante di reset che riporta il valore a 0.</p>
-
