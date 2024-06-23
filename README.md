@@ -1,14 +1,17 @@
 # ![simpleCounter-logoReadMe ](https://github.com/Vincenzo-19/JS-basics-Project/assets/153443276/bd69aefe-7ff2-49bc-8ae4-8284dc752f4b)
-<p>This is my first project using JavaScript. I have created a counter where the value and buttons are built only with JS, and I used HTML & CSS only for styling the body, the card, and the h1 tag.</p>
+<p>Questo è il mio primo progetto utilizzando JavaScript. Ho creato un counter dove il valore e i pulsanti sono costruiti solo con JS, e ho usato HTML e CSS solo per lo stile del corpo, della scheda e del tag h1.</p>
 
 <img width="1260" alt="screenshot-SimpleCounter" src="https://github.com/Vincenzo-19/JS-basics-Project/assets/153443276/a5199e48-df04-426b-afc6-b80bd815a812">
 
-<p>Below is the link for the counter⬇️</p>
+<p>Qui sotto c'è il link per il counter⬇️</p>
 
+https://vincenzo-19.github.io/JS-basics-Project/
 
-<p>Below is the link for the presentation⬇️</p>
+<p>Qui sotto c'è il link per la presentazione⬇️</p>
+
+https://1drv.ms/p/s!Aodt1AMLr1EhgjGA488Zc7nDtqG1?e=Yxcd3j
 
 
 <h2>How it works</h2>
-<p>The counter I have created is simple. There is a value that starts at 0, then the -/+ buttons which respectively decrement by 1 and increment by 1, and the reset button which sets the value back to 0.</p>
+<p>Il counter che ho creato è molto semplice. C’è un valore che inizia da 0, poi ci sono i pulsanti -/+ che rispettivamente decrementano di 1 e incrementano di 1, e il pulsante di reset che riporta il valore a 0.</p>
 
