@@ -9,7 +9,7 @@ https://vincenzo-19.github.io/JS-basics-Project/
 
 <p>Qui sotto c'è il link per la presentazione⬇️</p>
 
-https://1drv.ms/p/s!Aodt1AMLr1EhgjGA488Zc7nDtqG1?e=Yxcd3j
+https://1drv.ms/b/s!Aodt1AMLr1EhgjRGuQc-IFvGwYV8?e=7Vk2Kc
 
 
 <h2>Come funziona</h2>
