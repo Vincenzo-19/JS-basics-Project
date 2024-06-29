@@ -1,66 +1,81 @@
-const BUTTONS_CONTAINER = document.querySelector('.buttonsContainer')
+const BUTTONS_CONTAINER = document.querySelector(".buttonsContainer");
+
+// // function for new elements
+
+function buttonsGenerator() {
+  for (let index = 0; index < 3; index++) {
+    let newButtons = document.createElement("button");
+    newButtons.className = "btn btn-outline-danger me-4";
+    BUTTONS_CONTAINER.append(newButtons);
+  }
+}
+
+buttonsGenerator();
+
+// styling decrement Button
+
+const DECREMENT_BTN = BUTTONS_CONTAINER.children[0];
+
+DECREMENT_BTN.textContent = "-";
+DECREMENT_BTN.className = "decrement-button btn btn-outline-danger me-4";
+
+// styling Reset Button
+
+const RESET_BTN = BUTTONS_CONTAINER.children[1];
+
+RESET_BTN.textContent = "Reset";
+RESET_BTN.className = "reset-button btn btn-outline-danger";
+
+// styling increment Button
+
+const INCREMENT_BTN = BUTTONS_CONTAINER.children[2];
+
+INCREMENT_BTN.textContent = "+";
+INCREMENT_BTN.className = "increment-button btn btn-outline-danger ms-4";
 
 
+// styling buttons for mobile mobile touch screen 
 
-// creation and styling of decrement Button
-const DECREMENT_BTN = document.createElement('button')
-DECREMENT_BTN.textContent = '-'
+document.querySelectorAll('button').forEach(button => {
+  button.addEventListener('touchstart', () => {
+      button.style.backgroundColor = 'red';
+      button.style.color = 'white'
+  });
+  button.addEventListener('touchend', () => {
+      button.style.backgroundColor = 'white';
+      button.style.color = 'red'
+  });
+});
+ 
+// creation and styling of result
 
-DECREMENT_BTN.className = 'decrement-button btn btn-outline-danger me-4'
+let result = document.createElement("div");
 
-BUTTONS_CONTAINER.append(DECREMENT_BTN)
+result.textContent = "0";
+result.className = "result-value fs-3 mt-4 mb-4";
 
-// creation and styling of reset Button
-const RESET_BTN = document.createElement('button')
-RESET_BTN.textContent = 'Reset'
+document.querySelector("h1").after(result);
 
-RESET_BTN.className = 'reset-button btn btn-outline-danger'
+//
+//
+//
 
-BUTTONS_CONTAINER.append(RESET_BTN)
-
-// creation and styling of increment Button
-const INCREMENT_BTN = document.createElement('button')
-INCREMENT_BTN.textContent = '+'
-
-INCREMENT_BTN.className = 'increment-button btn btn-outline-danger ms-4'
-
-BUTTONS_CONTAINER.append(INCREMENT_BTN)
-
-// cresation of result
-
-let result = document.createElement('div')
-result.textContent = '0'
-
-result.className = 'result-value fs-3 mt-4 mb-4'
-
-document.querySelector('h1').after(result)
-
-// 
-// 
-// 
-
-const DECREMENT_BUTTON = document.querySelector('.decrement-button')
-const RESET_BUTTON = document.querySelector('.reset-button')
-const INCREMENT_BUTTON = document.querySelector('.increment-button')
-let resultValue = document.querySelector('.result-value')
+let resultValue = document.querySelector(".result-value");
 
 let currentValue = 0;
 
-INCREMENT_BTN.addEventListener('click', () => {
-    currentValue += 1
-    resultValue.innerHTML = currentValue
-})
+BUTTONS_CONTAINER.addEventListener("click", (event) => {
+  let target = event.target;
 
-RESET_BTN.addEventListener('click', () => {
-    currentValue = 0
-    resultValue.innerHTML = currentValue
-})
+  if (target.innerHTML == "+") {
+    currentValue += 1;
+    resultValue.innerHTML = currentValue;
+  } else if (target.innerHTML == "-") {
+    currentValue -= 1;
+    resultValue.innerHTML = currentValue;
+  } else if (target.innerHTML == "Reset") {
+    currentValue = 0;
+    resultValue.innerHTML = currentValue;
+  }
 
-DECREMENT_BTN.addEventListener('click', () => {
-    currentValue -= 1
-    resultValue.innerHTML = currentValue
-})
-
-
-
-
+});
