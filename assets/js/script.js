@@ -2,15 +2,14 @@ const BUTTONS_CONTAINER = document.querySelector(".buttonsContainer");
 
 // // function for new elements
 
-function buttonsGenerator() {
-  for (let index = 0; index < 3; index++) {
+function buttonsGenerator(container, numberOfButtons) {
+  for (let index = 0; index < numberOfButtons; index++) {
     let newButtons = document.createElement("button");
-    newButtons.className = "btn btn-outline-danger me-4";
-    BUTTONS_CONTAINER.append(newButtons);
+    container.append(newButtons);
   }
 }
 
-buttonsGenerator();
+buttonsGenerator(BUTTONS_CONTAINER, 3, "btn btn-outline-danger me-4");
 
 // styling decrement Button
 
