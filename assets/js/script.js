@@ -9,7 +9,7 @@ function buttonsGenerator(container, numberOfButtons) {
   }
 }
 
-buttonsGenerator(BUTTONS_CONTAINER, 3, "btn btn-outline-danger me-4");
+buttonsGenerator(BUTTONS_CONTAINER, 3);
 
 // styling decrement Button
 
